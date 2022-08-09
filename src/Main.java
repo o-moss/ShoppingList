@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> shoppingList = new ArrayList<>();
+        List<String> shoppingList = new ArrayList<>();
         System.out.println("Список возможных операций: " +
                 "\n1. Добавить в список покупок. \n2. Показать список покупок. " +
                 "\n3. Удалить из списка покупок.\n4. Поиск покупки ключевому слову.");
@@ -54,7 +55,7 @@ public class Main {
         }
     }
 
-    private static void printShoppingList(ArrayList<String> list) {
+    private static void printShoppingList(List<String> list) {
         System.out.println("Список покупок:");
         int i = 0;
         for (String s : list) {
